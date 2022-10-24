@@ -11,6 +11,7 @@ I make bug reports for programs I regurarly use. These are some of them:
 - Checklists
 - Test cases
 - SQL Queries
+- Postman Collections
 
 ## 📫 Contact me
 - [Email](mailto:nizamutdinov.iskan@yandex.ru)
