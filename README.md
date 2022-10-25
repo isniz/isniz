@@ -9,7 +9,7 @@ I make bug reports for programs I regurarly use. These are some of them:
 
 ## 🗎 Testing documentation
 - Checklists
-- Test cases
+- [Test cases](https://docs.google.com/spreadsheets/d/1Pudf6IKOJFXA5sxoyxGXamA76cFGEMxQcxm1EiXfm0Y/edit?usp=sharing)
 - SQL Queries
 - Postman Collections
 
