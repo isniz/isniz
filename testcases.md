@@ -3,6 +3,8 @@ System: Интернет-банк i2B
 
 Documentation: [Link](https://bspb.ru/media/rukovodstvo_polzovatelja_i2_B_945386ba7f.pdf)
 
+Russsian version: [Link](https://docs.google.com/spreadsheets/d/1Pudf6IKOJFXA5sxoyxGXamA76cFGEMxQcxm1EiXfm0Y)
+
 ---
 
 **Summary**: Authorizing in and logging out of system
