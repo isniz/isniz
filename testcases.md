@@ -1,4 +1,4 @@
-# Testcases
+# Test cases demo
 System: Интернет-банк i2B
 
 Documentation: [Link](https://bspb.ru/media/rukovodstvo_polzovatelja_i2_B_945386ba7f.pdf)
