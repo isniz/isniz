@@ -39,3 +39,5 @@ I chose to use: 1) the collection of phone numbers connected the company it is o
 I filled the tables with this data:
 
 ![Filled](images/filled_tables.png)
+
+There is phone numbers in the first table that are present in second, others does not. This exact difference will show the effect of INNER, LEFT and RIGHT JOINING. I also gave rows IDs not following continious order, so 
