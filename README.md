@@ -10,7 +10,7 @@ I make bug reports for programs I regurarly use. These are some of them:
 ## 🗎 Testing documentation
 - Checklists
 - [Test cases](testcases.md)
-- SQL Queries
+- [SQL Queries](sql_queries.md)
 - Postman Collections
 
 ## 📫 Contact me
