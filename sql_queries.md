@@ -20,7 +20,8 @@ I chose to use: 1) the collection of phone numbers connected the company it is o
 
     CREATE DATABASE phones;
     USE phones;
-    CREATE table operators(
+    
+    CREATE table info(
     -> id INT(10) NOT NULL,
     -> phone_number BIGINT NULL,                                            // Phone number row
     -> operator VARCHAR(55) NULL,                                           // Operator's name row
@@ -34,3 +35,7 @@ I chose to use: 1) the collection of phone numbers connected the company it is o
     -> phone_number BIGINT NULL,                                            // Phone number
     -> PRIMARY KEY (id)
     -> );
+
+I filled the tables with this data:
+
+!(Filled)[images/filled_tables.png]
