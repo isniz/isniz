@@ -109,7 +109,7 @@ As we can see, not every phone number has definite mobile operator. Otherwise we
     
 ### 2.1 Joining on ID
 
-Again, responses below won't have any practical meaning, but in other cases (for example, where both tables are appended simultaneously with related information) it may be useful. I did this to my database just as an experiment. INNER JOIN:
+Again, responses below won't have any practical meaning, but in other cases (for example, where both tables are appended simultaneously with related information) it may be useful. I did this to my database just as an experiment. INNER JOIN (IDs are the same):
 
     SELECT accounts.*, info.operator
     -> FROM accounts
