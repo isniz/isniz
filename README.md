@@ -8,7 +8,8 @@ I make bug reports for programs I regurarly use. These are some of them:
 - https://github.com/qutebrowser/qutebrowser/issues/5741
 
 ## 🗎 Testing documentation
-- Checklists
+- [Mindmaps](checklis.md)
+- [Checklists](checklis.md)
 - [Test cases](testcases.md)
 - [SQL Queries](sql_queries.md)
 - Postman Collections
