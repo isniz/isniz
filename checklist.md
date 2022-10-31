@@ -21,4 +21,7 @@ We have to click through every clickable entity and register visually how system
 ## 2. Writing a checklist
 
 Now we have to come up with a few checks for every branch of a mind map tree. This checks all should find system capable of performing tasks it was designed for
-(positive check) and adequately respond to user's possible wrong actions at the same time (negative check). There are also 
+(positive check) and adequately respond to user's possible wrong actions at the same time (negative check). The checks are also have smoke, critical path, or extended
+type, and I register that.
+
+Let's start with control panel.
