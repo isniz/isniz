@@ -52,3 +52,7 @@ There is a system for a tester called «Интернет-банк i2B» («Inter
  Step 3 result won't match: Menu updates, but page updates before button "Получить" is hit.
 
  Step 6 result won't match: The item " Краткая выписка" is absent.
+
+## Summary
+
+These test cases could be used right away by an unprepared person. The result of his work is checking if expected and actual results match. They do in the #1 case, and do not in #2. I had given above what does not work as described in the documentation, and this errors could be used for forming a bug-report.
