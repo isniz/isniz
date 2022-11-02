@@ -175,3 +175,7 @@ RIGHT JOIN:
     |    2 | Zoran      | Vrcelj        | 381677561169 | Yettel Serbia |
     |    7 | Aleksandar | Zelenbaba     | 381628947323 | A1            |
     +------+------------+---------------+--------------+---------------+
+    
+## Summary
+    
+Resulting tables show the power of SQL JOINS. Where there is an identical data in database, it could help to connect different kinds of information and find interesting and maybe unexpected relations.
