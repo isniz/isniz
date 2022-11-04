@@ -1,7 +1,7 @@
 # Postman Collections
 
 Making HTTP requests is a key action in software testing. It has the final say
-if question of proper behavior of web application is asked.
+if question of proper behavior of web application is given.
 
 Postman is a computer program that makes sending HTTP requests easy. The common
 entity in it is a *Collection* — a set of requests templates made for
