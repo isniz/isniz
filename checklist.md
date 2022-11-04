@@ -1,31 +1,46 @@
-# Making checklist for testing a Gmail
+# Mind map & Checklist
 
-Suppose we'd want to test how sending emails via Google works ("Compose" feature). For this, we have to prepare a comprehensive list of checks,
-that later will be used for actual manual testing. Writing a checklist helps overcome human memory imperfections. The more complex tested system is, the more necessary
-becomes a mind map of a system, which is the base of our future checklist. So the whole process consists of two components:
+Suppose we'd want to test if some web application works as intended. For this,
+we have to prepare a comprehensive list of checks, that later will be used as a
+base for actual manual testing. Writing a checklist helps overcome human memory
+imperfections — you can not remember everything you later want to check.
+Moreover, the more complex tested system is, the more necessary becomes a mind
+map of a system, the visual representation of system capabilities. Often
+checklists are made with an eye on mind map.
+
+Let's test how sending emails via Gmail works ("Compose" feature). As said
+above, the whole process will consist of two main steps:
 
 ## Overview
-1. Creating a mind map
-2. Writing a checklist based on mind map
+1. Creating a **mind map**
+2. Writing a **checklist** based on mind map
 
-Google mail [has a manual](https://support.google.com/mail), so the checklist will be written according to it. If the function is not described in manual,
-a check will be set with just assuming result.
+Gmail [has a manual](https://support.google.com/mail), so the checklist will be
+written according to it. If the function is not described in manual, a check
+will be set with just assuming result.
 
 ## 1. Creating a mind map
 
-Gmail's "Compose" greets us with a new window at the right bottom corner of a browser:
+Gmail's *Compose* greets us with a new window at the right bottom corner of a
+browser:
 
 ![Compose window](images/gmail_window.png)
 
-We have to click through every clickable entity and register visually how system responds. There are text fields, menus, submenus, dropdowns, radiobuttons, etc. For future convenience, I also write these types alongside with names of functions. After this tedious process the mind map is ready. You can see it below.
+We have to click through every clickable entity and register visually how system
+responds. There are text fields, menus, submenus, dropdowns, radiobuttons, etc.
+For future convenience, We will also write these types alongside with names of
+functions. After this tedious process the mind map is ready. You can see it
+below.
 
 <img src="images/mindmap.png" width=800px>
 
 ## 2. Writing a checklist
 
-Now we have to come up with a few checks for every branch of a mind map tree. This checks all should find system capable of performing tasks it was designed for
-(positive check) and adequately respond to user's possible wrong actions at the same time (negative check). The checks are also have smoke, critical path, or extended
-priority, and I register that.
+Now we have to come up with a few checks for every branch of a mind map tree.
+This checks all should find system capable of performing tasks it was designed
+for (positive check) and adequately respond to user's possible wrong actions at
+the same time (negative check). The checks are also have smoke, critical path,
+or extended priority, and I register that.
 
 ### Control panel
 
@@ -89,4 +104,5 @@ priority, and I register that.
 
 ## Summary
 
-This list of check covers all the functions available via *Compose*. It could be used for testing right away, or test cases could be written for every check.
+This list of check covers all the functions available via *Compose*. It could be
+used for testing right away, or test cases could be written for every check.

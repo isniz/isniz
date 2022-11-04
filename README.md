@@ -1,5 +1,6 @@
 # 👋 Iskander N
-Hi! I'm a QA Engineer and this is my portfolio. Here you could find the testing documentation. [Link to my CV.](https://)
+Hi! I'm a QA Engineer and this is my portfolio. Here you could find the testing
+documentation. [Link to my CV.](cv.pdf)
 
 ## 🐛 Bug reports
 I make bug reports for programs I regurarly use. These are some of them:
@@ -12,7 +13,7 @@ I make bug reports for programs I regurarly use. These are some of them:
 - [Checklists](checklist.md)
 - [Test cases](testcases.md)
 - [SQL Queries](sql_queries.md)
-- [Postman Collections](postman.md)
+- [Postman Collections](posman.md)
 
 ## 📫 Contact me
 - [Email](mailto:nizamutdinov.iskan@yandex.ru)

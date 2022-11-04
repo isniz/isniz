@@ -1,11 +1,12 @@
 # SQL Queries
 
 **Overview:**
-1. CREATING tables and filling it with correct data;
-2. SELECTING to check if everything OK;
-3. JOIN tables.
+1. **CREATING** tables and filling it with correct data;
+2. **SELECTING** to check if everything OK;
+3. **JOIN** tables.
 
-To properly see the power of INNER/LEFT/RIGHT JOINS it is better to use data that could be represented in two sets with fractions intersecting:
+To properly see the power of INNER/LEFT/RIGHT JOINS it is better to use data
+that could be represented in two sets with fractions intersecting:
 
 <img src="images/intersection.png" title="Sets intersection" height="300"/>
 
@@ -14,7 +15,9 @@ On the image above we can clearly see what result of SQL JOINS will look like:
 - The dark plus green area represents the result of LEFT JOIN
 - The dark plus purple area represents the result of RIGHT JOIN
 
-I chose to use: 1) the collection of phone numbers connected the company it is operated by; 2) the collection of people's ID where not everyone has a phone number.
+We choose to use: 1) the collection of phone numbers connected the company it is
+operated by; 2) the collection of people's ID where not everyone has a phone
+number.
 
 ## 1. Creating database
 
@@ -40,11 +43,20 @@ I filled the tables with this data:
 
 ![Filled](images/filled_tables.png)
 
-There are phone numbers in the first table that are also present in the second; others does not. This exact difference will show the effect of INNER, LEFT and RIGHT JOINING. I also made IDs not following continious order, so it will also be possible to demonstrate JOIN effect ON (though the resulting table will not have any applicable sense).
+There are phone numbers in the first table that are also present in the second;
+others does not. This exact difference will show the effect of INNER, LEFT and
+RIGHT JOINING. We also made IDs not following continious order, so it will also
+be possible to demonstrate JOIN effect ON (though the resulting table will not
+have any applicable sense).
 
 ## 2. Joining tables
 
-Joining tables allows to see the information from multiple tables at once. The main problem is to decide how and where to "stitch" the rows, and the solution is to pick specific row from one table and from the other, in which we sure equal values are present. For example, we would want to know what mobile operator each user in our database prefers. Let's INNER JOIN two tables ON the phone number:
+Joining tables allows to see the information from multiple tables at once. The
+main problem is to decide how and where to "stitch" the rows, and the solution
+is to pick specific row from one table and one from the other, in which we sure
+equal values are present. For example, we would want to know what mobile
+operator each user in our database prefers. Let's INNER JOIN two tables ON the
+phone number:
 
     SELECT accounts.*, info.operator
     -> FROM accounts
@@ -61,7 +73,9 @@ Joining tables allows to see the information from multiple tables at once. The m
     |  7 | Aleksandar | Zelenbaba | 381628947323 | A1            |
     +----+------------+-----------+--------------+---------------+
 
-This response shows all columns requested from both tables, but only the rows containing identical phone numbers. To also include all the rows from the first (left) table, one should use LEFT JOIN:
+This response shows all columns requested from both tables, but only the rows
+containing identical phone numbers. To also include all the rows from the first
+(left) table, one should use LEFT JOIN:
 
     SELECT accounts.*, info.operator
     -> FROM accounts
@@ -85,7 +99,10 @@ This response shows all columns requested from both tables, but only the rows co
     |  7 | Aleksandar | Zelenbaba     | 381628947323 | A1            |
     +----+------------+---------------+--------------+---------------+
 
-As we can see, not every phone number has definite mobile operator. Otherwise we would see this person in INNER JOIN response. We are left with RIGHT JOIN request. It will show not only the tables intersection, but all the remaining rows from operators table:
+As we can see, not every phone number has definite mobile operator. Otherwise we
+would see this person in INNER JOIN response. We are left with RIGHT JOIN
+request. It will show not only the tables intersection, but all the remaining
+rows from operators table:
 
     SELECT accounts.*, info.operator
     -> FROM accounts
@@ -109,7 +126,10 @@ As we can see, not every phone number has definite mobile operator. Otherwise we
 
 ### 2.1 Joining on ID
 
-Again, responses below won't have any practical meaning, but in other cases (for example, where both tables are appended simultaneously with related information) it may be useful. I did this to my database just as an experiment. INNER JOIN (IDs are the same):
+Again, responses below won't have any practical meaning, but in other cases
+(for example, where both tables are appended simultaneously with related
+information) it may be useful. I did this to my database just as an experiment.
+INNER JOIN (IDs are the same):
 
     SELECT accounts.*, info.operator
     -> FROM accounts
@@ -175,7 +195,9 @@ RIGHT JOIN:
     |    2 | Zoran      | Vrcelj        | 381677561169 | Yettel Serbia |
     |    7 | Aleksandar | Zelenbaba     | 381628947323 | A1            |
     +------+------------+---------------+--------------+---------------+
-    
+
 ## Summary
-    
-Resulting tables show the power of SQL JOINS. Where there is an identical data in database, it could help to connect different kinds of information and find interesting and maybe unexpected relations.
+
+Resulting tables show the power of SQL JOINS. Where there is an identical data
+in database, it could help to connect different kinds of information and find
+interesting and maybe unexpected relations.
