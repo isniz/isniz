@@ -12,7 +12,7 @@ I make bug reports for programs I regurarly use. These are some of them:
 - [Checklists](checklist.md)
 - [Test cases](testcases.md)
 - [SQL Queries](sql_queries.md)
-- Postman Collections
+- [Postman Collections](postman.md)
 
 ## 📫 Contact me
 - [Email](mailto:nizamutdinov.iskan@yandex.ru)
